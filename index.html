@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
   <body>
     <div class="hero-section section">
@@ -14,10 +15,14 @@
         <h1>Online Maths Tutoring Made Easy</h1>
         <p class="large">Keep your child’s GCSE or A-Level Maths studies on track with fun, interactive online tuition.</p>
       </div>
-
-      <div class="laptop-container">
+      <div class="laptop-group">
         <div class="laptop-graphic"></div>
-        <div class="laptop-screen-graphic"></div>
+        <video autoplay muted loop class="zoom-faces">
+          <source src="visuals/zoom-faces.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop class="laptop-screen-graphic">
+          <source src="visuals/laptop-content.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
@@ -40,7 +45,7 @@
         <div class="arrow-2"></div>
         <div class="process-step">
           <div class="teaching-illustration illustration"></div>
-          <h3>Exam Ready</h3>
+          <h3>Become Exam Ready</h3>
           <p>Your child is now equiped with the confidence and knowledge to get the best possible grades that they're capable of.</p>
         </div>
       </div>
@@ -85,8 +90,8 @@
     <hr>
 
     <div class="testimonial-section centre-aligned-section section">
-      <h2>Don't take our word for it</h2>
-      <p class="large">Here’s some quotes from students and parents that pete’s worked with over the years.</p>
+      <h2>Don't just take our word for it</h2>
+      <p class="large">Here’s some quotes from students and parents that Pete’s worked with over the years.</p>
       <div class="testimonial-modules">
         <div class="testimonial">
           <p>“Thank you Pete for getting me through my GCSE. I definitely wouldn’t have made it without your help. I really looked forward to our on-line sessions.”</p>
@@ -114,7 +119,29 @@
     <div class="centre-aligned-section section">
       <h2>Start a conversation</h2>
       <p class="large">text about why you should contact.</p>
+
+      <form
+        action="https://formspree.io/f/mvovrdbb"
+        method="POST"
+        class="contact-form"
+      >
+        <div class="input-container">
+          <label for="email-address">Email</label>
+          <input id="email-address" type="text" name="_replyto" data-placeholder="some text">
+        </div>
+
+        <div class="input-container">
+          <label for="email-message">Message</label>
+          <textarea id="email-message" name="message" data-placeholder="some text"></textarea>
+        </div>
+
+
+        <!-- your other form fields go here -->
+
+        <button class="primary" type="submit">Send</button>
+      </form>
     </div>
 
+    <script type="text/javascript" src="js/general.js"></script>
   </body>
 </html>
