@@ -43,3 +43,8 @@ const FloatLabel = (() => {
 })();
 
 FloatLabel.init();
+
+
+function scrollToForm() {
+  document.querySelector('#form').scrollIntoView({behavior: 'smooth'});
+}
