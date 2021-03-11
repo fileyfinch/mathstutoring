@@ -44,7 +44,47 @@ const FloatLabel = (() => {
 
 FloatLabel.init();
 
+function scrollToAbout() {
+  document.querySelector('#about_segment').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToPricing() {
+  document.querySelector('#pricing_segment').scrollIntoView({behavior: 'smooth'});
+}
+
 
 function scrollToForm() {
   document.querySelector('#form').scrollIntoView({behavior: 'smooth'});
 }
+
+function scrollToTestimonials() {
+  document.querySelector('#testimonial_segment').scrollIntoView({behavior: 'smooth'});
+}
+
+function scrollToLatestNews() {
+  document.querySelector('#News_segment').scrollIntoView({behavior: 'smooth'});
+}
+
+
+
+const navbar = document.getElementById('nav-container')
+
+// OnScroll event handler
+const onScroll = () => {
+
+  // Get scroll value
+  const scroll = document.documentElement.scrollTop
+
+  // If scroll value is more than 0 - add class
+  if (scroll > 30) {
+    navbar.classList.add("nav-scrolling");
+  } else {
+    navbar.classList.remove("nav-scrolling")
+  }
+}
+
+// Optional - throttling onScroll handler at 100ms with lodash
+// const throttledOnScroll = _.throttle(onScroll, 100, {})
+
+// Use either onScroll or throttledOnScroll
+window.addEventListener('scroll', onScroll)

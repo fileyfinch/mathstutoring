@@ -20,6 +20,19 @@
 
   </head>
   <body>
+<!--  navigation segment -->
+    <nav id="nav-container" class="nav-container">
+      <div class="nav-inner">
+        <a class="nav-item" href="javascript: scrollToAbout();">About</a>
+        <a class="nav-item" href="javascript: scrollToPricing();">Pricing</a>
+        <a class="nav-item mobile-hidden" href="javascript: scrollToTestimonials();">Testimonials</a>
+        <a class="nav-item" href="javascript: scrollToForm();">Contact Us</a>
+        <a class="nav-item" href="javascript: scrollToLatestNews();">Latest News</a>
+      </div>
+      <div class="nav-shadow"></div>
+    </nav>
+
+
     <div class="hero-section section">
       <div class="left-aligned-text">
         <h1>Friendly &amp; Accessible Online Maths Lessons</h1>
@@ -61,7 +74,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="about_segment">
 
     <div class="bio-section section">
       <div class="bio-pic"></div>
@@ -75,7 +88,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="pricing_segment">
 
     <div class="pricing-section centre-aligned-section section">
       <h2>Pricing</h2>
@@ -101,7 +114,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="testimonial_segment">
 
     <div class="testimonial-section centre-aligned-section section">
       <h2>Don't just take my word for it</h2>
@@ -128,7 +141,7 @@
       </div>
     </div>
 
-    <hr>
+    <hr id="form">
 
     <div class="centre-aligned-section section">
       <h2>Start a conversation</h2>
@@ -138,7 +151,6 @@
         action="https://formspree.io/f/mvovrdbb"
         method="POST"
         class="contact-form"
-        id="form"
       >
         <div class="input-container">
           <label for="email-address">Email</label>
@@ -152,18 +164,17 @@
         <button class="primary" type="submit">Send Message</button>
       </form>
     </div>
-<!--     Experimenting with facebook content -->
-    <hr>
+
+    <hr id="News_segment">
+
     <div class="centre-aligned-section section">
       <h2>Latest News</h2>
       <p class="large news-subtext">Check out the latest news, offers and resources from our Facebook page.</p>
+      
+<!--       Facebook elfsight plugin code below -->
       <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-6edb6fdd-778f-40df-ac27-ba96871274e3"></div>
     </div>
-<!--     <div class="facebook-panel">
-
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeterfinchtutoring&tabs=timeline&width=1000&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" width="500" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-    </div> -->
 
     <script type="text/javascript" src="js/general.js"></script>
   </body>
